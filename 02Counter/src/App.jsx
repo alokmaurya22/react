@@ -27,7 +27,7 @@ function App() {
   return (
     <>
       <h1>Hii React</h1>
-      <h2>Value : {counter}</h2>
+      <h2>Value :{counter}</h2>
       <button onClick = {addValue}>Add Value</button>
       <br />
       <button onClick = {removeValue}>Remove Value</button>
