@@ -2,15 +2,15 @@ import React from 'react';
 
 const HeroSection = () => {
     return (
-        <section className="bg-[#131726] h-[845px] flex flex-col justify-center items-center text-center relative">
-            <div className="max-w-[736px] mx-auto mt-[-70px] relative z-10">
+        <section className="bg-[#131726] h-[750px] flex flex-col justify-center items-center text-center relative">
+            <div className=" mx-auto mt-[10px] relative z-10">
                 {/* Title */}
-                <h1 className="text-[55px] leading-[58px] font-extrabold text-white">
+                <h1 className="text-7xl  font-extrabold text-white">
                     Become a Coding Hero,<span className="text-[#ff7700]"><br />Shape India’s Tech Future</span>
                 </h1>
 
                 {/* Subtitle */}
-                <p className="text-lg text-gray-300 mt-6 leading-[28px] text-xl font-medium">
+                <p className=" text-gray-300 mt-6 leading-[28px] text-lg font-bold">
                     Join India’s most active coding community. Share knowledge, win prizes,
                     and build your tech network - all for free!
                 </p>
@@ -30,8 +30,10 @@ const HeroSection = () => {
             </div>
 
             {/* Elliptical Background Glow (Oval on x-axis) */}
-            <div className="absolute top-[40%] left-[50%] w-[1000px] h-[200px] bg-[#ff7700] blur-[150px] opacity-50 -translate-x-1/2 -translate-y-1/2 pointer-events-none rounded-[200px]"></div>
-        </section>
+            <div className="absolute top-[50%] left-[50%] w-[195vw] max-w-[1400px] h-[45vw] max-h-[600px] bg-[#ff7700] blur-[130px] opacity-15 -translate-x-1/2 -translate-y-1/2 pointer-events-none rounded-[50%]">
+            </div>
+
+        </section >
 
 
 
