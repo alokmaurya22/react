@@ -30,6 +30,7 @@ const WhyBecomeHero = () => {
                     <div
                         key={index}
                         className="bg-[#131726] p-6 rounded-xl shadow-lg text-center transition-transform transform hover:scale-105"
+                        style={{ border: '1px solid hsl(0, 0%, 15.3%)', transition: 'all 0.3s ease' }} // Added border with custom color
                     >
                         <div
                             className="mb-4 w-16 h-16 mx-auto flex items-center justify-center rounded-full bg-gray-800 transition-transform transform hover:rotate-360 duration-1000"
@@ -41,6 +42,7 @@ const WhyBecomeHero = () => {
                     </div>
                 ))}
             </div>
+
 
 
             <div className="text-center mt-8">

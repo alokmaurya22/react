@@ -5,6 +5,7 @@ import GoalSection from './components/GoalSection';
 import WhyBecomeHero from './components/WhyBecomeHero';
 import JourneySection from './components/JourneySection';
 import SuperPowerSection from './components/SuperPowerSection';
+import RegularUserSection from './components/RegularUserSection';
 import Footer from './components/Footer';
 
 const App = () => {
@@ -16,6 +17,7 @@ const App = () => {
       <WhyBecomeHero />
       <JourneySection />
       <SuperPowerSection />
+      <RegularUserSection />
       <Footer />
     </div>
   );

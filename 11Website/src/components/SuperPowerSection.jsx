@@ -36,7 +36,7 @@ const powers = [
 
 const SuperPowerSection = () => {
     return (
-        <section className="py-20 bg-[#030712] text-white">
+        <section className="py-20 bg-gradient-to-l from-[#030712] to-[#131726] text-white">
             <div className="text-center mb-8">
                 <button className="bg-gradient-to-r from-orange-400 to-pink-500 text-white py-2 px-6 rounded-full text-lg font-semibold hover:from-orange-500 hover:to-pink-600 hover:scale-105 transition-transform duration-300">
                     Become a Coding Hero
@@ -44,18 +44,19 @@ const SuperPowerSection = () => {
 
             </div>
 
-            <h2 className="text-center text-5xl font-bold bg-gradient-to-r from-orange-400 to-pink-500 text-transparent bg-clip-text mb-8">
+            <h2 className="text-center text-6xl font-bold bg-gradient-to-r from-orange-700 via-yellow-600 to-pink-700 text-transparent bg-clip-text mb-8">
                 Super Power of Coding Heroes
             </h2>
             <p className="text-center text-lg text-gray-300 max-w-xl mx-auto mb-8 font-bold">
                 Join the Coding Hero program and unlock a world of opportunities. Open to all college students across India.
             </p>
 
-            <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 max-w-6xl mx-auto">
+            <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 max-w-7xl mx-auto">
                 {powers.map((power, index) => (
                     <div
                         key={index}
-                        className="bg-[#131726] p-8 rounded-xl shadow-lg transition-transform transform hover:scale-105" // Increased padding for wider box
+                        className="bg-[#131726] p-8 rounded-xl shadow-lg transition-transform transform hover:scale-105"
+                        style={{ border: '1px solid hsl(0, 0%, 15.3%)' }} // Applied the custom border
                     >
                         <div className="flex items-center mb-4">
                             <div className="mr-4 transition-transform duration-300 ease-in-out transform hover:rotate-[360deg]">
@@ -67,6 +68,7 @@ const SuperPowerSection = () => {
                     </div>
                 ))}
             </div>
+
 
 
 
