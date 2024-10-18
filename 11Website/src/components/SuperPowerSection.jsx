@@ -5,49 +5,48 @@ const powers = [
     {
         title: "Earn Cash Prizes",
         description: "Compete and win exciting cash rewards",
-        icon: <FaTrophy className="text-purple-400 text-3xl" />,
+        icon: <FaTrophy className="text-purple-400 text-2xl" />, // Decreased icon size
     },
     {
         title: "Build Community",
         description: "Create a network around your favorite tech",
-        icon: <FaUsers className="text-blue-400 text-3xl" />,
+        icon: <FaUsers className="text-blue-400 text-2xl" />, // Decreased icon size
     },
     {
         title: "Network",
         description: "Connect with fellow tech enthusiasts",
-        icon: <FaNetworkWired className="text-green-400 text-3xl" />,
+        icon: <FaNetworkWired className="text-green-400 text-2xl" />, // Decreased icon size
     },
     {
         title: "Gain Reputation",
         description: "Stand out as a community leader in tech",
-        icon: <FaStar className="text-yellow-400 text-3xl" />,
+        icon: <FaStar className="text-yellow-400 text-2xl" />, // Decreased icon size
     },
     {
         title: "True Tech Teaching",
         description: "Share knowledge without sales pitches",
-        icon: <FaGraduationCap className="text-pink-400 text-3xl" />,
+        icon: <FaGraduationCap className="text-pink-400 text-2xl" />, // Decreased icon size
     },
     {
         title: "Leadership",
         description: "Develop your leadership skills",
-        icon: <FaLightbulb className="text-cyan-400 text-3xl" />,
+        icon: <FaLightbulb className="text-cyan-400 text-2xl" />, // Decreased icon size
     },
 ];
 
 const SuperPowerSection = () => {
     return (
-        <section className="py-20 bg-gradient-to-l from-[#030712] to-[#131726] text-white">
+        <section className="py-20 bg-gradient-to-l from-[#030712] to-[#131726] text-white px-4 sm:px-8 md:px-12">
             <div className="text-center mb-8">
-                <button className="bg-gradient-to-r from-orange-400 to-pink-500 text-white py-2 px-6 rounded-full text-lg font-semibold hover:from-orange-500 hover:to-pink-600 hover:scale-105 transition-transform duration-300">
+                <button className="bg-gradient-to-r from-orange-500 to-pink-500 text-white py-2 px-6 rounded-full text-lg font-semibold hover:from-orange-600 hover:to-pink-600 hover:scale-105 transition-transform duration-300">
                     Become a Coding Hero
                 </button>
-
             </div>
 
-            <h2 className="text-center text-6xl font-bold bg-gradient-to-r from-orange-700 via-yellow-600 to-pink-700 text-transparent bg-clip-text mb-8">
+            <h2 className="text-center text-4xl sm-text-6xl font-bold mb-4 bg-gradient-to-r from-orange-600 via-yellow-600 to-pink-600 text-transparent bg-clip-text">
                 Super Power of Coding Heroes
             </h2>
-            <p className="text-center text-lg text-gray-300 max-w-xl mx-auto mb-8 font-bold">
+            <p className="text-center text-base sm:text-lg text-gray-400 max-w-xl mx-auto mb-6">
                 Join the Coding Hero program and unlock a world of opportunities. Open to all college students across India.
             </p>
 
@@ -55,32 +54,23 @@ const SuperPowerSection = () => {
                 {powers.map((power, index) => (
                     <div
                         key={index}
-                        className="bg-[#131726] p-8 rounded-xl shadow-lg transition-transform transform hover:scale-105"
+                        className="bg-[#131726] p-6 sm:p-8 rounded-xl shadow-lg transition-transform transform hover:scale-105"
                         style={{ border: '1px solid hsl(0, 0%, 15.3%)' }} // Applied the custom border
                     >
                         <div className="flex items-center mb-4">
-                            <div className="mr-4 transition-transform duration-300 ease-in-out transform hover:rotate-[360deg]">
+                            <div className="mr-2 transition-transform duration-300 ease-in-out transform hover:rotate-[360deg]">
                                 {power.icon}
                             </div>
-                            <h3 className="text-xl font-semibold">{power.title}</h3>
+                            <h3 className="text-lg sm:text-xl font-semibold">{power.title}</h3> {/* Adjusted font size */}
                         </div>
-                        <p className="text-gray-400">{power.description}</p>
+                        <p className="text-gray-400 text-sm sm:text-base">{power.description}</p> {/* Adjusted font size */}
                     </div>
                 ))}
             </div>
-
-
-
-
-
-
-
             <div className="text-center mt-8">
-                <button className="bg-gradient-to-r from-orange-400 to-pink-500 text-white py-2 px-6 rounded-full text-lg font-semibold hover:from-orange-500 hover:to-pink-600 hover:scale-105 transition-transform duration-300">
+                <button className="bg-gradient-to-r from-orange-500 to-pink-500 text-white py-2 px-6 rounded-full text-lg font-semibold hover:from-orange-600 hover:to-pink-600 hover:scale-105 transition-transform duration-300">
                     Join Now
                 </button>
-
-
             </div>
         </section>
     );
