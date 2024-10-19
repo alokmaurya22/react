@@ -29,7 +29,7 @@ const Navbar = () => {
 
             {/* Mobile Menu */}
             {isOpen && (
-                <div className="sticky top-20px flex flex-col items-center space-y-4 bg-[#131726]/10 h-screen text-white text-center md:hidden backdrop-blur-lg z-30">
+                <div className="sticky top-10 flex flex-col items-center -my-30 justify-center space-y-4 bg-[#131726]/1 h-screen text-white text-center md:hidden backdrop-blur-sm z-30">
                     <a
                         href="#goals"
                         className="inline-flex items-center justify-center whitespace-nowrap rounded-md font-medium focus-visible:outline-none focus-visible:ring-1 focus-visible:ring-ring disabled:pointer-events-none disabled:opacity-50 hover:bg-gray-700 duration-200 h-9 px-4 py-2 text-gray-100  hover:text-orange-500  transition-colors text-xl"
