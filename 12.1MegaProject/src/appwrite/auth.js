@@ -11,9 +11,8 @@ export class AuthService {
             .setEndpoint(conf.appwriteUrl)
             .setProject(conf.appwriteProjectId);
         this.account = new Account(this.client);
-        //console.log(this.account); 
-    }
 
+    }
 
     async createAccount({ email, password, name }) {
         try {
@@ -30,9 +29,8 @@ export class AuthService {
     }
 
     async login({ email, password }) {
-        //console.log(this.account); 
         try {
-            return await this.account.createEmailPasswordSession(email, password);
+            return await this.account.createEmailSession(email, password);
         } catch (error) {
             throw error;
         }
@@ -42,23 +40,24 @@ export class AuthService {
         try {
             return await this.account.get();
         } catch (error) {
-            //throw error;
-            console.log("Appwrite service: get current user", error);
-        } finally {
-            return null;
+            console.log("Appwrite serive :: getCurrentUser :: error", error);
         }
+
+        return null;
     }
 
     async logout() {
+
         try {
             await this.account.deleteSessions();
-            //await this.account.deleteSession('current');
         } catch (error) {
-            throw error;
+            console.log("Appwrite serive :: logout :: error", error);
         }
     }
-
 }
+
 const authService = new AuthService();
 
-export default authService;
+export default authService
+
+
